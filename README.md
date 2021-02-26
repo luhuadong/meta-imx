@@ -1,13 +1,20 @@
-# Build scenarios
+# README
 
-The following are build setup scenarios for various configurations.
-Set up the manifest and populate the Yocto Project layer sources with these commands:
+该仓库主要有以下三个分支：
+1. master : 说明文档
+2. zeus-5.4.47-2.2.0 : 对应原yocto中的meta-imx
+3. manifest : 放置该版本的manifest的xml文件
+
+
+## 1. 初始化仓库
+
+参考**i.MX_Yocto_Project_User's_Guide.pdf**文档，配置好repo。
+配置完repo后，执行以下指令：
 
 ```
 $ mkdir imx-yocto-bsp
 $ cd imx-yocto-bsp
-$ repo init -u git@192.168.30.11:K37X/meta-imx.git
--b manifest  -m imx-5.4.47-2.2.0.xml
+$ repo init -u git@192.168.30.11:K37X/meta-imx.git -b manifest  -m imx-5.4.47-2.2.0.xml
 $ repo sync
 ```
 
