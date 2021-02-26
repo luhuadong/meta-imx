@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="2"/>
+
+  <remote fetch="ssh://git@192.168.30.11/liuwenjie" name="CAF"/>
+  <remote fetch="https://github.com/Freescale" name="community"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://github.com/OSSystems" name="OSSystems"/>
+  <remote fetch="https://github.com/meta-qt5"  name="QT5"/>
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+
+  <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="01488a237cdf45b3087420e169c9f67b84fd7373">
+    <linkfile dest="README" src="README"/>
+    <linkfile dest="setup-environment" src="setup-environment"/>
+  </project>
+  
+  <project name="meta-browser" path="sources/meta-browser" remote="OSSystems" revision="ee3be3b5986a4aa0e73df2204a625ae1fe5df37e"/>
+
+  <project name="meta-freescale" path="sources/meta-freescale" remote="community" revision="14f1a630a47375432f93c556927b879b51d84c4e"/>
+  <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="community" revision="dbcc686f52c3c84db8cb86aa8973a4e373651b98"/>
+  <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="community" revision="ca27d12e4964d1336e662bcc60184bbff526c857"/>
+
+  <project name="meta-imx" path="sources/meta-imx" remote="CAF" revision="refs/tags/rel_imx_5.4.47_2.2.0" upstream="zeus-5.4.47-2.2.0">
+    <linkfile dest="imx-setup-release.sh" src="tools/imx-setup-release.sh"/>
+    <linkfile dest="README-IMXBSP" src="README"/>
+  </project>
+
+  <project name="meta-qt5" path="sources/meta-qt5" remote="QT5" revision="5144a99a696a8a72c0765ea0e8be8ceafaa78f85"/>
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="2b5dd1eb81cd08bc065bc76125f2856e9383e98b"/>
+  <project name="poky" path="sources/poky" remote="yocto" revision="5408e48d374fc741fa46b57ddfd8a537843bda6f"/>
+
+</manifest>
+
