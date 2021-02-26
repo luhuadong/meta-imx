@@ -13,12 +13,11 @@ DEPENDS_append = " dtc-native"
 
 LICENSE = "GPLv2+"
 LIC_FILES_CHKSUM = "file://Licenses/gpl-2.0.txt;md5=b234ee4d69f5fce4486a80fdaf4a4263"
-
-UBOOT_SRC ?= "git://source.codeaurora.org/external/imx/uboot-imx.git;protocol=https"
+UBOOT_SRC ?= "git://git@192.168.30.11/K37X/uboot-imx.git;protocol=ssh"
 SRCBRANCH = "imx_v2020.04_5.4.47_2.2.0"
 SRC_URI = "${UBOOT_SRC};branch=${SRCBRANCH} \
 "
-SRCREV = "ffc3fbe7e5418d16f492c78693c3c4fa41f06f27"
+SRCREV = "6b8ad0715e6ae382ccb33ed3ebfd03c52cb8ea53"
 
 S = "${WORKDIR}/git"
 
