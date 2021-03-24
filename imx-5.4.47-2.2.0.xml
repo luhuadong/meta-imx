@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <default sync-j="2"/>
+  <default sync-j="3"/>
 
-  <remote fetch="ssh://git@192.168.30.11/liuwenjie" name="CAF"/>
+  <remote fetch="ssh://git@192.168.30.11/K37X" name="CAF"/>
   <remote fetch="https://github.com/Freescale" name="community"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://github.com/OSSystems" name="OSSystems"/>
