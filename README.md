@@ -11,7 +11,7 @@
 参考**i.MX_Yocto_Project_User's_Guide.pdf**文档，配置好repo。
 配置完repo后，执行以下指令：
 
-```
+```shell
 $ mkdir imx-yocto-bsp
 $ cd imx-yocto-bsp
 $ repo init -u git@192.168.30.11:K37X/meta-imx.git -b manifest  -m imx-5.4.47-2.2.0.xml
@@ -25,3 +25,19 @@ $ repo sync
 ## meta-imx layer
 
 该layer主要是将u-boot-imx修改为本地的仓库。
+
+
+## 2. 构建
+
+### 构建根文件系统
+
+```shell
+bitbake imx-image-k37x
+```
+
+### 构建工具链
+
+```shell
+bitbake imx-image-k37x -c populate_sdk
+```
+
