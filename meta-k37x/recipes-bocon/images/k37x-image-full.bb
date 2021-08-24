@@ -52,6 +52,8 @@ CORE_IMAGE_EXTRA_INSTALL += " \
 
 IMAGE_INSTALL += " \
     fsl-rc-local \
+    usbutils \
+    pciutils \
     packagegroup-qt5-imx \
     ${FONT_CHINESE} \
 "
