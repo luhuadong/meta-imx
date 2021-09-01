@@ -32,12 +32,12 @@ $ repo sync
 ### 构建根文件系统
 
 ```shell
-bitbake imx-image-k37x
+bitbake k37x-image-full
 ```
 
 ### 构建工具链
 
 ```shell
-bitbake imx-image-k37x -c populate_sdk
+bitbake k37x-image-full -c populate_sdk
 ```
 
