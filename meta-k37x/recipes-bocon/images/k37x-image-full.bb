@@ -54,6 +54,23 @@ IMAGE_INSTALL += " \
     fsl-rc-local \
     usbutils \
     pciutils \
+    zeromq \
+    hiredis \
+    rapidjson \
+    util-linux \
+    paho-mqtt-c \
+    protobuf \
+    zlog \
+    curl \
+    sqlite3 \
+    mariadb \
+    libev \
+    wvdial \
+    spitools \
+    libgpiod \
+    qtvirtualkeyboard \
+    packagegroup-qt5-webengine \
     packagegroup-qt5-imx \
+    docker connman connman-client \
     ${FONT_CHINESE} \
 "
