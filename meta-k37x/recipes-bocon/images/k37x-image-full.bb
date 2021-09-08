@@ -52,6 +52,8 @@ CORE_IMAGE_EXTRA_INSTALL += " \
 
 IMAGE_INSTALL += " \
     fsl-rc-local \
+    udev-rules-imx \
+    udev-extraconf \
     usbutils \
     pciutils \
     zeromq \
