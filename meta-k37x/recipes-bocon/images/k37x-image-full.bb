@@ -52,6 +52,7 @@ CORE_IMAGE_EXTRA_INSTALL += " \
 
 IMAGE_INSTALL += " \
     fsl-rc-local \
+    tzdata \
     udev-rules-imx \
     udev-extraconf \
     usbutils \
